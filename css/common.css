@@ -4,11 +4,238 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+/*Görev1 css*/
+/* Ana kategoriler için stil */
+
+.categoriescss {
+  list-style: none;
+}
+h2 {
+  font-weight: 600;
+}
+#categories {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 8px;
+}
+.item ul li {
+  list-style: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.item {
+  background: #f5f4fa;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  max-height: max-content;
+}
+.listcopy {
+  padding-left: 0px;
+}
+/*Görev2 Css*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery_list {
+  flex-basis: calc(33.333% - 10px);
+}
+
+.gallery_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/*Görev3 Css*/
+#name-input {
+  outline: none;
+  background: transparent;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+/*Görev4 Css*/
+.login-form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+}
+input {
+  outline: none;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  width: 360px;
+  border-radius: 4px;
+  background: transparent;
+}
+input:hover {
+  border-color: #000000;
+}
+.login-form label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form button {
+  background: #4e75ff;
+  border-radius: 8px;
+  color: #ffffff;
+  width: max-content;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.login-form button:hover {
+  background: #6c8cff;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+.clicks {
+  display: flex;
+  gap: 12px;
+}
+/*Görev5 Css */
+.change-color {
+  width: 148px; /* Hug (148px) */
+  height: 40px; /* Hug (40px) */
+  padding: 8px 16px; /* padding: 8px 16px 8px 16px */
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff; /* Metin rengini beyaz olarak ayarladım */
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.change-color:hover {
+  background-color: #3c5dc1; /* Hover durumu için biraz daha koyu bir renk */
+}
+/*Görev6 Css */
+#controls {
+  display: flex;
+  gap: 10px;
+  background: #f6f6fe;
+  width: 486px;
+  padding: 32px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background-color: #4e75ff;
+  color: #ffffff;
+}
+button:hover {
+  background: #6c8cff;
+}
+/* Destroy butonunu kırmızı yapma */
+button[data-destroy] {
+  background-color: #ff4e4e; /* Kırmızı arka plan */
+}
+
+button[data-destroy]:hover {
+  background-color: #ff7070; /* Hover durumu için daha açık kırmızı */
+}
+
+#button {
+  width: 120px;
+}
+
+input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: #f6f6fe;
+  width: 486px;
+  padding: 32px;
+  margin-top: 15px;
+}
+
+.box {
+  background: #4e75ff;
+  border-radius: 8px;
 }

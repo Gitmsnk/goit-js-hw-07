@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < amount; i++) {
       const box = document.createElement("div");
+      box.classList.add("div_class");
       box.style.width = `${boxSize}px`;
       box.style.height = `${boxSize}px`;
       box.style.backgroundColor = getRandomHexColor();
